@@ -2,22 +2,22 @@ class Siggy < Formula
   desc "Terminal-based Signal messenger client"
   homepage "https://siggy.chat"
   license "GPL-3.0-only"
-  version "1.4.2"
+  version "1.5.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/johnsideserf/siggy/releases/download/v1.4.2/siggy-v1.4.2-aarch64-apple-darwin.tar.gz"
-      sha256 "e3aecfd29347862a5e275903a1866bc690e95153bbe030e323e973758446efdd"
+      url "https://github.com/johnsideserf/siggy/releases/download/v1.5.0/siggy-v1.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "b589b66acfabd17e10848619ec0fa1db900b02eed72ef6b0c59794d93e211b25"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/johnsideserf/siggy/releases/download/v1.4.2/siggy-v1.4.2-x86_64-apple-darwin.tar.gz"
-      sha256 "27371305c5cd74b36d28aaa39e74f730eb724e15e6cb19fc50a9030f29520875"
+      url "https://github.com/johnsideserf/siggy/releases/download/v1.5.0/siggy-v1.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "62467818be3b016073e3db159749a6e8aefcb5728e84c30696838a2a1a3bec70"
     end
   end
 
   on_linux do
-    url "https://github.com/johnsideserf/siggy/archive/refs/tags/v1.4.2.tar.gz"
-    sha256 "72d2f82d4da370a1f0273953f4b5adb7e79d1136b2a50c17a31106aa4b4d4cb8"
+    url "https://github.com/johnsideserf/siggy/archive/refs/tags/v1.5.0.tar.gz"
+    sha256 "2002744bd7300dcc250f4b395f94fca03a519454547df3ce96cb24fe4eeddf6c"
     depends_on "rust" => :build
   end
 
